@@ -1,0 +1,42 @@
+/* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: navy;
+}
+
+/* Background color classes */
+.yellow {
+  background-color: lightyellow;
+}
+
+.lavender {
+  background-color: lavender;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+/* Additional div styles */
+div {
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  border: 2px dashed gray;
+}
+
+/* Button styling */
+input[type="button"] {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}

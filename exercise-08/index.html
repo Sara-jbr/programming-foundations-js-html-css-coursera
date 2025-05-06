@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert to Grayscale</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #0077cc;
+    }
+    canvas {
+      border: 2px solid #ccc;
+      margin: 10px;
+    }
+    input, button {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Upload and Convert to Grayscale</h1>
+
+<input type="file" accept="image/*" id="fileInput" onchange="upload()"><br>
+<button onclick="makeGray()">Convert to Grayscale</button><br>
+
+<canvas id="originalCanvas"></canvas>
+<canvas id="grayCanvas"></canvas>
+
+<script>
+    let originalImage = null;
+    let grayImage = null;
+
+    function upload() {
+      let fileInput = document.getElementById("fileInput");
+      originalImage = new SimpleImage(fileInput);
+      grayImage = new SimpleImage(fileInput);
+
+      let canvas = document.getElementById("originalCanvas");
+      originalImage.drawTo(canvas);
+    }
+
+    function makeGray() {
+      if (grayImage === null || !grayImage.complete()) {
+        alert("Image not loaded yet!");
+        return;
+      }
+
+      for (let pixel of grayImage.values()) {
+        let avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+        pixel.setRed(avg);
+        pixel.setGreen(avg);
+        pixel.setBlue(avg);
+      }
+
+      let grayCanvas = document.getElementById("grayCanvas");
+      grayImage.drawTo(grayCanvas);
+    }
+  </script>
+
+</body>
+</html>

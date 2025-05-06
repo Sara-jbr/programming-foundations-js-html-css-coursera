@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Pages Interactively</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="myHeader">TO DO List</h1>
+
+<input type="button" id="addButton" value="Add" onclick="addTask()">
+<input type="text" id="input" placeholder="enter task …">
+
+<hr>
+
+    <!--this refers to the button that was clicked.
+    this.parentNode gets the <li> element that wraps around the button and task text.
+    So you're passing the entire task item (<li>) to the function (either markDone() or remove())
+    .-->
+<ul id="tasks">
+    <li>
+        <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;"/>
+        <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;"/>
+        make todo list
+    </li>
+</ul>
+
+<hr>
+
+<div id="divabout" class="divabout"></div>
+<input type="button" value="About" onclick="doAbout()">
+<input type="button" value="Clear" onclick="clearAbout()">
+
+<script src="script.js"></script>
+</body>
+</html>

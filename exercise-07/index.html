@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload and Display an Image</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 20px;
+    }
+    h1 {
+      color: #0077cc;
+    }
+    canvas {
+      border: 2px solid #ccc;
+      width: 400px;
+    }
+    input {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Upload and Display an Image</h1>
+
+<input type="file" accept="image/*" id="fileInput" onchange="upload()"><br><br>
+
+<canvas id="imageCanvas"></canvas>
+
+<script>
+    function upload() {
+      let fileInput = document.getElementById("fileInput");
+      let image = new SimpleImage(fileInput);
+      let canvas = document.getElementById("imageCanvas");
+      image.drawTo(canvas);
+    }
+  </script>
+
+</body>
+</html>

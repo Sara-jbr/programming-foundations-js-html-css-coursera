@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try It! Buttons with Divs</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+      The 'defer' attribute tells the browser to download the script in parallel
+      but only run it after the full HTML document has been parsed.
+      <script src="script.js" defer></script>
+      -->
+</head>
+<body>
+
+<h1>Event-Driven Programming Example</h1>
+
+<div id="divOne">This is the first div element.</div>
+<div id="divTwo">This is the second div element.</div>
+
+<input type="button" id="btnAlert" value="Try It 1 (Alert)" onclick="showAlert()">
+<input type="button" id="btnConfirm" value="Try It 2 (Confirm)" onclick="showConfirm()">
+
+<!--
+  Placing the <script> tag at the end of the <body>:
+  - Ensures the HTML is fully loaded before the script runs.
+  - Helps avoid errors when accessing HTML elements.
+
+-->
+<script src="script.js"></script>
+
+</body>
+</html>
