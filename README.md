@@ -1,4 +1,4 @@
-# Programming Foundations with JavaScript, HTML and CSS – Practice Projects
+## Programming Foundations with JavaScript, HTML and CSS – Practice Projects
 
 This repository contains my personal practice projects from the [Coursera course](https://www.coursera.org/learn/duke-programming-web) **"Programming Foundations with JavaScript, HTML and CSS"** by Duke University.
 
@@ -23,13 +23,86 @@ This course teaches these concepts using **JavaScript**, which runs in every mod
 
 ---
 
-##  Technologies Used
+## 📄 What is HTML?
 
-- **HTML** – To structure web content
-- **CSS** – To style the content
-- **JavaScript** – To add logic and interactivity
-- **Canvas API** – For drawing graphics in the browser
-- **SimpleImage.js** – A library used in the course to manipulate and display images
+**HTML (HyperText Markup Language)** is the skeleton of every web page.
+
+- It defines the **structure** and **content** of the page.
+- Elements like `<h1>`, `<p>`, `<img>`, and `<button>` tell the browser what to show.
+- HTML is **not** a programming language — it's a **markup language**.
+
+## 🎨 What is CSS?
+CSS (Cascading Style Sheets) controls how your HTML looks — the design and layout.
+
+It applies colors, spacing, fonts, and responsive design.
+It separates content (HTML) from style (CSS).
+
+## ⚙️ What is JavaScript?
+JavaScript (JS) is the programming language of the web. It brings interaction and behavior to your web pages.
+
+It can change HTML and CSS on the page after it loads.
+It responds to user actions like clicks and key presses.
+JavaScript runs in the browser (like Chrome, Firefox).
+
+## 🔁 How HTML, CSS, and JS Work Together
+HTML gives the structure/content.
+
+CSS gives the style/design.
+
+JavaScript gives interaction/behavior.
+
+
+## 🧠 Web Programming Foundation Rules
+When you're just starting, keep these foundational rules in mind:
+
+Separation of concerns:
+Structure with HTML, style with CSS, and logic with JavaScript.
+
+Use semantic HTML:
+Use correct tags like `<header>`, `<section>`, and `<article>` to improve accessibility and SEO.
+
+Mobile-first design:
+Start with small screens and scale up using CSS media queries.
+
+Every HTML element is a **box**. Understanding how this box works is essential for layout and styling. The Box Model consists of:
+
+- **Content**: The actual text or image.
+- **Padding**: Space between the content and the border.
+- **Border**: The edge around the padding (and content).
+- **Margin**: Space outside the border, separating elements.
+---
+
+## 🌐 How a Browser Reads a Web Page
+
+When you visit a site, the browser follows these steps:
+
+1. **Load HTML**: Parses the HTML and builds the DOM (a tree of elements).
+2. **Load CSS**: Applies styles from `<style>` tags or CSS files, creating the render tree.
+3. **Load JavaScript**: Runs scripts that can update the DOM, styles, or react to events.
+4. **Render the Page**: Draws everything to the screen using the render tree.
+5. **Handle User Input**: Listens for clicks, typing, etc., and JavaScript responds.
+
+## 📚 What is the DOM?
+
+DOM stands for **Document Object Model**.  
+It’s how the browser understands and represents your HTML page — like a tree structure made of objects.
+The DOM gives structure to your HTML so the browser can render it visually and let you control it with code.
+
+Think of it like this:
+
+🧱 **HTML** → 📖 **DOM** → 🖥️ **Visual Page**
+
+
+### Explanation:
+
+Every HTML element (`<h1>`, `<p>`, `<img>`, etc.) becomes a **node** in the DOM.  
+The browser builds this structure in memory so JavaScript can interact with it.
+
+You can use JavaScript to:
+
+-  Change text or styles
+-  Add or remove elements
+-  React to user actions (clicks, typing)
 
 ---
 

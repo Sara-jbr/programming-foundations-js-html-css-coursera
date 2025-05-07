@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px;
+}
+
+#intro {
+  background-color: #d6eaf8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#hobbies, #wishlist, #media, #table-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #2e86c1;
+}
+
+img {
+  display: block;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #bbb;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #aed6f1;
+}

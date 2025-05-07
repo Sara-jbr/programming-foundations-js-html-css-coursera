@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Screen Effect</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Green Screen Image Combiner</h1>
+
+<label for="fgInput">Foreground Image:</label>
+<input type="file" id="fgInput" accept="image/*" onchange="loadForegroundImage()">
+
+<label for="bgInput">Background Image:</label>
+<input type="file" id="bgInput" accept="image/*" onchange="loadBackgroundImage()">
+
+<button onclick="doGreenScreen()">Create Composite</button>
+<button onclick="clearCanvas()">Clear Canvases</button>
+
+<br>
+
+<canvas id="fgCanvas" width="400" height="300"></canvas>
+<canvas id="bgCanvas" width="400" height="300"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>

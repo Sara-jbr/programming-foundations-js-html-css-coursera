@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Filters</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Simple Image Filters</h1>
+<input type="file" id="upload" accept="image/*" onchange="loadImage()"><br><br>
+<canvas id="canvas"></canvas><br><br>
+
+<button onclick="doRed()">Red</button>
+<button onclick="doGray()">Gray</button>
+<button onclick="doRainbow()">Rainbow</button>
+<button onclick="doBlue()">Blue</button>
+<button onclick="doPurple()">Purple</button>
+<button onclick="resetImage()">Reset</button>
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
